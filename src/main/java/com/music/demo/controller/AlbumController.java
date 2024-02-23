@@ -1,14 +1,17 @@
-package com.music.demo.album;
+package com.music.demo.controller;
 
+import com.music.demo.model.Album;
+import com.music.demo.services.AlbumServices;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
+@Tag(name = "Controller", description = "Album Details.")
 public class AlbumController {
     @Autowired
     private AlbumServices albumServices;
