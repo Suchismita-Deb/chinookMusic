@@ -14,7 +14,7 @@ public class TrackServices {
     private TrackRepository trackRepository;
 
     public List<Track> getAllTrack() {
-        return trackRepository.findALl();
+        return trackRepository.findAll();
     }
 
     public List<Track> getTrackById(Integer id) {

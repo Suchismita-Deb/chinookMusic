@@ -14,7 +14,7 @@ public class Invoice {
     @Id
     private Integer invoiceid;
     private Integer customerid;
-    private Timestamp invoicedate;
+    private String invoicedate;
     private String billingaddress;
     private String billingcity;
     private String billingstate;
