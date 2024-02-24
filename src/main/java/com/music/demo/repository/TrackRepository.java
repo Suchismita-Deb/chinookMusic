@@ -8,6 +8,7 @@ import java.util.List;
 
 @Repository
 public interface TrackRepository extends JpaRepository<Track,Integer> {
+
     public List<Track> findAll();
     public List<Track> findBytrackid(Integer id);
 }
