@@ -7,9 +7,9 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "genre")
-public class Genre {
+@Table(name = "mediatype")
+public class MediaType {
     @Id
-    private Integer genreid;
+    private Integer mediatypeid;
     private String name;
 }
