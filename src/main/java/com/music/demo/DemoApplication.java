@@ -9,13 +9,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @OpenAPIDefinition(
 		info = @Info(
-				title = "Patient Registration API",
+				title = "Music API",
 				version = "1.0.0",
-				description = "Patient Registration API Documentation."
+				description = "API Documentation."
 		),
 		servers = @Server(
 				url = "http://localhost:8080",
-				description = "Patient Registration url."
+				description = "URL."
 		)
 )
 public class DemoApplication {

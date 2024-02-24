@@ -16,8 +16,12 @@ public class AlbumController {
     @Autowired
     private AlbumServices albumServices;
 
+    @GetMapping("/album")
+    public List<Album> getAllAlbum(){
+        return albumServices.getAllAlbum();
+    }
     @GetMapping("/artistId/{id}")
-    public List<Album> getArtistByArtistId(@PathVariable Integer id){
-        return albumServices.getArtistByArtistId(id);
+    public List<Album> getArtistByAlbumId(@PathVariable Integer id){
+        return albumServices.getArtistByAlbumId(id);
     }
 }

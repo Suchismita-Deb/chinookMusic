@@ -12,7 +12,11 @@ public class AlbumServices {
     @Autowired
     private AlbumRepository albumRepository;
 
-    public List<Album> getArtistByArtistId(Integer id) {
+    public List<Album> getArtistByAlbumId(Integer id) {
         return albumRepository.findByalbumid(id);
+    }
+
+    public List<Album> getAllAlbum() {
+        return albumRepository.findAll();
     }
 }
